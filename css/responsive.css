@@ -1,0 +1,341 @@
+/* ESCRITORIOS GRANDES 
+----------------------------------------*/
+@media (min-width: 1080px) {
+    
+ 
+}
+
+
+@media (max-width: 900px) {
+    
+    .SeccionMain
+    .MainSec
+    .h2main{
+        font-size:40px;
+    }
+    .SeccionMain
+    .pmain{
+        font-size:25px;
+    }
+   .MainSecimg img{
+       height:60vh;
+   }
+
+   /* mainCuestions*/
+
+   .h2Cuestions{
+    font-size:40px;
+}
+.articulos{
+    padding: 30px;
+}
+.articulos img{
+   height:7vh;
+}
+
+.h2articulo{
+    font-size:22px;
+}
+.particulo{
+    font-size:15px;
+}
+
+/* Article*/
+
+.seccionartilustexto{
+    margin:30px;
+}
+.articulosmain{
+    margin:40px;
+}
+.articuloIMg
+img{
+    height:25vh;
+}
+.articuloTexto{
+    margin: 10px;
+}
+.articuloTexto
+.h3Texto{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.articuloTexto
+.ptexto{
+    margin-top: 5px;
+}
+
+
+
+@media (max-width: 790px) {
+  
+    .hamburguesa{
+        display: block;
+    }
+
+    #ulseccion
+{
+    flex-direction: column;
+}
+
+    .seccionNav{
+        display: flex;
+        margin: 5px;    
+        justify-content:space-between;
+         align-items:center;
+    }
+    .seccionNav
+    .logo{
+        height:4vh;
+    }
+
+    
+    .hamburguesa{
+        height:2vh;
+
+    }
+    .sseccionn{
+        flex-direction: column;
+    }
+    .navegar{
+        background: #ffffff;
+        height: 50vh;
+        right: 0%;
+        transition:all 0.8s ease;
+         border-radius:20px;    
+            flex-direction: column;
+            width: 100%;
+            top: 10;
+            line-height:75px;
+            overflow-x:auto;
+            z-index: 99999999999;
+            box-shadow: 10px 10px 10px rgba(107, 103, 103, 0.425);
+    }
+  
+    .navv
+        {
+            right: 0%;
+        }
+    .navv
+    {
+        right: 100%;
+    }
+
+    .navegar
+.seccionNavBtn
+.btn1{
+    padding:8px 20px;
+    font-size:10px;
+
+}
+
+/* main*/
+    .SeccionMain
+    .MainSec
+    .h2main{
+        font-size:35px;
+    }
+    .SeccionMain
+    .pmain{
+        font-size:20px;
+    }
+   .MainSecimg img{
+       height:45vh;
+   }
+
+   /* mainCuestions*/
+ 
+   .h2Cuestions{
+    font-size:35px;
+}
+.articulos{
+    padding: 20px;
+}
+
+.pCuections{ 
+    font-size:20px;
+}
+/* Article*/
+
+.seccionartilustexto{
+    margin:20px;
+}
+.h2articulos{
+    font-size: 35px;
+    text-align: center;
+}
+
+.articulosmain{
+    flex-direction: column;
+}
+
+.articulosmain{
+    margin:20px;
+}
+.articuloIMg
+img{
+    height:20vh;
+    width:100%;
+}
+.articuloTexto{
+    margin: 8px;
+}
+.articuloTexto
+.h3Texto{
+    font-size: 15px;
+}
+
+.Secccionarticulo1{
+    margin-bottom: 40px;
+    width:80%;
+}
+.Secccionarticulo2{
+    margin-bottom: 40px;
+    width:80%;
+}
+.Secccionarticulo3{
+    margin-bottom: 40px;
+    width:80%;
+}
+.Secccionarticulo4{
+    margin-bottom: 40px;
+    width:80%;
+}
+
+
+/* footer*/
+.ulSeccion ul{
+    font-size:15px;
+}
+
+.social img{
+    height:2vh;
+}
+
+.SeccionbtnCopy
+textarea{
+    width: 80%;
+    height:5vh;
+}
+
+.SeccionbtnCopy
+#form
+.btn3 {
+    width: 40%;
+    height:3vh;
+}
+.Modal{
+    width: 50%;
+    height: 50%;
+}
+.Modal
+img{
+    height:5vh;
+    width: 50%;
+}
+
+.Modal
+input{
+    height:4vh;
+    width: 80%;
+}
+
+.RequestModal
+.Modal
+textarea{
+    height:10vh;    
+    width: 80%;
+}
+
+
+@media (max-width: 650px) {
+    .SeccionMain{
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .seccionNav
+    .logo{
+        height:3vh;
+    }
+
+  
+    .SeccionMain
+    .MainSec
+    .h2main{
+        font-size:25px;
+    }
+    .SeccionMain
+    .MainSec
+    .pmain{
+        font-size:18px;
+    }
+
+    .mainCuestions{
+        text-align: center;
+    }
+
+    .mainCuestions
+    .h2Cuestions{
+        margin-top: 15px;
+        font-size:25px;
+    }
+    .mainCuestions
+    .pCuections{
+        font-size:18px;
+    }
+
+    .MainSecOpciones{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .articuloss
+    .h2articulos{
+        font-size:25px;
+    }
+    .SeccionFooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .ulSeccion{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .SeccionbtnCopy{
+        margin-top:10px;
+    }
+
+    .SeccionbtnCopy
+textarea{
+    height:8vh;
+}
+
+.ulSeccion ul{
+    margin-left: 15px;
+}
+
+.social img{
+    margin-left: 4px;
+    height:2vh;
+}
+.Modal
+img{
+    height:4vh;
+    width: 30vw;
+   margin-left: 50px;
+}
+
+}}}
+
+@media (max-width: 350px) {
+
+    .seccionNav
+    .logo{
+        display:none;
+    }
+   
+}

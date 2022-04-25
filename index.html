@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--fontaweson-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--fontGoogle-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>easyBank</title>
 </head>
 <body>
     <div class="contendor">
         <!--navegar-->
-        <nav class="navegar">
-             <section class="seccionNav">
-                 <img src="images/logo.svg" alt="" class="logo">
-             </section>
-             <section class="seccionNavUl">
-               <ul class="ulseccion">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Blog</li>
-                <li>Careers</li>
+        <section class="seccionNav">
+            <img src="images/logo.svg" alt="" class="logo">
+            <img src="images/icon-hamburger.svg" alt="" class="hamburguesa" id="hamburguesa">
+           </section>
+        <nav class="navegar" id="navegar">
+               <div class="navv" id="navv">
+             <section class="sseccionn" id="seccionRes">
+               <ul class="ulseccion" id="ulseccion">
+               <a class="remover" href="" target="_blank" rel="noopener noreferrer"><li>Home</li></a> 
+               <a class="remover" href="" target="_blank" rel="noopener noreferrer"><li>About US</li></a> 
+               <a class="remover" href="" target="_blank" rel="noopener noreferrer"><li>Blog</li></a> 
+               <a class="remover" href="" target="_blank" rel="noopener noreferrer"> <li>Careers</li></a>  
                </ul>
-            </section>
             <section class="seccionNavBtn">
-                <button class="btn1" id="btn1">Request Invite</button>
+                <button class="btn1 remover" id="btn1">Request Invite</button>
             </section>
+            </section>
+        </div>
         </nav>
         <!--Main-->
         <main class="SeccionMain">
             <section class="MainSec">
                <h2 class="h2main">Next generation digital banking</h2>
                 <p class="pmain">Take yout financial life online.Your Easybak account will be a one-stop-shop for spending, saving,budgeting,investing, and much more.</p>
-                <button type="submit" class="btn2">Request Invite</button>
+                <a href="" target="_blank" rel="noopener noreferrer"><button type="submit" class="btn2 ">This Is For You</button></a> 
             </section>
             <section class="MainSecimg">
                 <img src="images/image-mockups.png" alt="">
@@ -150,30 +155,61 @@
            <footer class="SeccionFooter">
               <section class="social">
                  <img src="images/imagelogo2.png" class="logo2">
-                 <br>
-                 <img src="images/icon-facebook.svg" alt="">
-                 <img src="images/icon-youtube.svg" alt="">
-                 <img src="images/icon-twitter.svg" alt="">
-                 <img src="images/icon-pinterest.svg" alt="">
-                 <img src="images/icon-instagram.svg" alt="">
+                 <br><br>
+                 <a href="https://www.facebook.com/vladimi.saintlouis/" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt=""></a>
+                 <a href="#" target="_blank" rel="noopener noreferrer"> <img src="images/icon-youtube.svg" alt=""></a>
+                 <a href="https://www.instagram.com/henryvladimil29/?hl=es" target="_blank" rel="noopener noreferrer"> <img src="images/icon-instagram.svg" alt=""></a>
               </section>
               <section class="ulSeccion">
                   <ul>
-                      <li>About US</li>
-                      <li>Contact</li>
-                      <li>Blog</li>
-                  </ul>
+                         <li>Contact</li><br>
+                         <li>+1 829-504-1112</li>
+                         <li>Shenryvladimil@gmail.com</li>
+                         <a href="https://www.linkedin.com/in/waddimi-saint-louis-b49424230/" target="_blank" rel="noopener noreferrer"> <li><b>Linked: Waddimi Saint Louis</b></li> </a>
+                        </ul>
                   <ul>
-                      <li>Careers</li>
-                      <li>Support</li>
-                      <li>Privacy Policy</li>
+                    <a href="" target="_blank" rel="noopener noreferrer">  <li>Support</li></a>
+                    <a href="" target="_blank" rel="noopener noreferrer">   <li>Privacy Policy</li></a>
                   </ul>
               </section>
               <section class="SeccionbtnCopy">
-                   <button type="submit" class="btn3" id="btn3">Request Invite</button>
-                   <p class="pcopy">Easybank.All Rights Reserved</p>
+                   <form id="form">
+                    <div class="field">
+                      <textarea type="text" name="texto" id="fronName" value="Tell us, How About?"></textarea>
+                    </div><br>
+                    <input type="submit" class="btn3" id="button" value="Send" >
+                  </form>
+                  <br>
+                  <p class="pcopy">Easybank.All Rights Reserved</p>
               </section>
            </footer>
-    </div>
+
+            <!--modal-->
+           <div class="RequestModal" id="RequestModal">
+               <section class="Modal modalClose" id="modal">
+               <p class="Close" id="Close"><i class="fa-solid fa-xmark"></i></p>
+                <img src="images/logo.svg" alt="">
+                <input  class="colorinput" type="text" name="name" id="name" placeholder="Name" required>
+                <input class="colorinput" type="text" name="Mail" id="Mail" placeholder="Mail" required>
+                <textarea class="colorinput" type="text" name="textarea" id="textarea" placeholder="Text" required></textarea>
+                <input type="button" id="btnModal" value="Enviar" name="btnmodal">
+                <p class="aviso"> Get everything about us.</p>
+                <p class="aviso">welcome to our bank.</p>
+                
+            </section>
+           </div>
+           
+            <!--js-->
+           <script src="js/script.js"></script>
+           <script src="js/send.js"></script>
+           <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="js/responsive.js"></script>
+           <script type="text/javascript"
+             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+           <script type="text/javascript">
+            emailjs.init('SDaOCURrjMi7pFBLL')
+           </script>
+
 </body>
 </html>

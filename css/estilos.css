@@ -14,6 +14,11 @@ body li{
     text-decoration: none;
 }
 
+body a{
+    list-style: none;
+    text-decoration: none;
+}
+
 :root{
     /* Primary*/
     --DarkBlue: hsl(233, 26%, 24%);
@@ -27,28 +32,46 @@ body li{
     --White: hsl(0, 0%, 100%);
 }
 /* navegar*/
+
+.hamburguesa{
+    display: none;
+}
 .navegar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    position: fixed;
     width: 100%;
-    box-shadow: 5px 5px 5px 5px rgba(204, 204, 204, 0.514);
+    position: fixed;
+    height:5vh;
+    box-shadow: 0px 0px  px px rgb(204, 204, 204);
+   
+}
+.seccionNav{
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    margin:15px;
 }
 
-.navegar
-.seccionNavUl
-.ulseccion {
+#ulseccion{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.navegar
+.sseccionn{
+    display: flex;
+    align-items: center;
+}
+#navv{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
 .seccionNav
 .logo{
-    height:4vh;
+    height:6vh;
 }
 
 .MainSecimg{
@@ -58,10 +81,8 @@ body li{
     background-size: cover;
 }
 
-.navegar
-.seccionNavUl
-.ulseccion li{
-    padding: 15px;
+#ulseccion li{
+    margin-left: 25px;
     cursor : pointer;
     color: rgb(196, 196, 196);
     transition: all 0.5s ease;
@@ -69,8 +90,7 @@ body li{
 }
 
 
-.seccionNavUl
-.ulseccion li:hover{
+#ulseccion li:hover{
    transform: scale(1.1);
    color: #000;
    border-bottom:4px solid var(--LimeGreen);
@@ -87,6 +107,7 @@ body li{
     transition: all 0.5 ease;
     cursor: pointer;
     font-size:15px;
+    margin-left: 25px;
 }
 
 .navegar
@@ -205,7 +226,6 @@ body li{
     transition: all 0.5s ease;
     margin-left: 20px;
     cursor: pointer;
-
 }
 .Secccionarticulo1:hover{
     transform:scale(1.1);
@@ -291,7 +311,10 @@ img{
 }
 
 .ulSeccion ul{
-    margin-left: 25px;
+    margin-left: 35px;
+}
+.ulSeccion ul a{
+    color: #fff;
 }
 
 .ulSeccion ul li{
@@ -307,13 +330,28 @@ img{
 
 
 .social img{
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 3px;
     height:3vh;
     cursor: pointer;
 }
-.btn3{
-    padding:8px 15px;
+
+
+.SeccionbtnCopy
+textarea{
+    width: 100%;
+    height:8vh;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(123, 131, 201, 0.712);
+    color: #fff;
+}
+
+
+.SeccionbtnCopy
+#form
+.btn3 {
+    width: 50%;
+    height:5vh;
     background-color: var(--LimeGreen);
     color: #fff;
     border-radius:20px;
@@ -329,6 +367,91 @@ img{
 }
 
 .pcopy{
-    margin-top: 15px;
     color: rgb(172, 172, 172);
 }
+
+/* Requesmodal*/
+
+.RequestModal{
+    visibility: hidden;
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.116);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    box-shadow: 5px 5px 5px 5px  rgba(158, 158, 158, 0.808);
+    position: relative;
+    transition:transform 1s;
+    transform: translateY(0%);
+}
+
+.modalClose{
+    transform: translatey(-200%);
+}
+
+.Modal
+.Close{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size:20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.Modal
+img{
+     margin:0 auto;
+    height:5vh;
+    width: 20vw;
+}
+
+.Modal
+input{
+    height:4vh;
+    margin:0 auto;
+    width: 40vw;
+    border-radius: 20px;
+    border:none;
+    text-align: center;
+    background-color:rgb(233, 247, 238);
+}
+
+.RequestModal
+.Modal
+textarea{
+    margin:0 auto;
+    border: none;
+    height:10vh;    
+    width: 40vw;
+    background-color:rgb(233, 247, 238);
+}
+
+#btnModal{
+    background-color: var(--LimeGreen);
+    height:4vh;
+    width: 40vw;
+    margin:0 auto;
+}
+
+.Modal
+.aviso{
+    color: var(--LimeGreen);
+}
+
