@@ -1,10 +1,7 @@
+/*footer */
 let button = document.getElementById('button').value;
-let noVacio = document.getElementById('fromName');
+let buttonmod = document.getElementById('btnModal').value;
 
-if(noVacio === ""){
-  document.getElementById("fromName").focus();
-  /*solucionar error */
-} else{
   document.getElementById('form')
   .addEventListener('submit', function(event) {
     event.preventDefault();
@@ -30,4 +27,32 @@ if(noVacio === ""){
   form.reset();
  });
  
-}
+
+/*modal*/
+
+  document.getElementById('formm')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+ 
+    buttonmod.value = 'Sending...';
+ 
+    const serviceID = 'default_service';
+    const templateID = 'template_2l1weck';
+ 
+    emailjs.sendForm(serviceID, templateID, this)
+     .then(() => {
+      buttonmod.value = 'Send Email';
+         Swal.fire(
+           'Message sent!',
+           'Click OK!',
+           'success'
+         )
+     }, (err) => {
+      buttonmod.value = 'Send Email';
+       alert(JSON.stringify(err));
+     });
+     
+     formm.reset();
+ });
+ 
+ 

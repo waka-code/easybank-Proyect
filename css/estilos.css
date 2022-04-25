@@ -346,6 +346,16 @@ textarea{
     color: #fff;
 }
 
+#mail{
+    text-align: center;
+    border-radius: 10px; 
+    border: none;
+    height:4vh;    
+    width: 100%;
+    background-color: rgba(123, 131, 201, 0.712);
+    color: #fff;
+}
+
 
 .SeccionbtnCopy
 #form
@@ -425,7 +435,7 @@ img{
 .Modal
 input{
     height:4vh;
-    margin:0 auto;
+    margin:5px auto;
     width: 40vw;
     border-radius: 20px;
     border:none;
@@ -436,19 +446,22 @@ input{
 .RequestModal
 .Modal
 textarea{
-    margin:0 auto;
+    margin:5px auto;
     border: none;
     height:10vh;    
     width: 40vw;
     background-color:rgb(233, 247, 238);
 }
 
+
 #btnModal{
     background-color: var(--LimeGreen);
     height:4vh;
     width: 40vw;
-    margin:0 auto;
+    margin:3px auto;
 }
+
+
 
 .Modal
 .aviso{

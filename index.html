@@ -175,7 +175,9 @@
               <section class="SeccionbtnCopy">
                    <form id="form">
                     <div class="field">
-                      <textarea type="text" name="texto" id="fronName" value="Tell us, How About?"></textarea>
+                      <textarea type="text" name="texto" id="fronName" value="Tell us, How About?" required></textarea>
+                       <br> <br>
+                      <input type="text" value="mail" name="correo" id="mail" required>
                     </div><br>
                     <input type="submit" class="btn3" id="button" value="Send" >
                   </form>
@@ -189,10 +191,12 @@
                <section class="Modal modalClose" id="modal">
                <p class="Close" id="Close"><i class="fa-solid fa-xmark"></i></p>
                 <img src="images/logo.svg" alt="">
+                <form id="formm">
                 <input  class="colorinput" type="text" name="name" id="name" placeholder="Name" required>
                 <input class="colorinput" type="text" name="Mail" id="Mail" placeholder="Mail" required>
                 <textarea class="colorinput" type="text" name="textarea" id="textarea" placeholder="Text" required></textarea>
-                <input type="button" id="btnModal" value="Enviar" name="btnmodal">
+                <input type="submit" id="btnModal" value="Enviar" name="btnmodal">
+                </form>
                 <p class="aviso"> Get everything about us.</p>
                 <p class="aviso">welcome to our bank.</p>
                 
